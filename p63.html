@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>p63</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+  <div id="numero">2</div>
+
+<script>
+  addEventListener('DOMContentLoaded',inicio,false);
+
+  function inicio()
+  {
+    document.getElementById('numero').addEventListener('dblclick',duplicar,false);
+  }
+
+  function duplicar()
+  {
+    var valor=document.getElementById('numero').innerHTML;
+    valor=parseInt(valor);
+    var resultado=valor*2;
+    document.getElementById('numero').innerHTML=resultado;
+
+  }
+</script>
+  
+</body>
+</html>
